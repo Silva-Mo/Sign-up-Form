@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'Cinzel';
+    src: url(../fonts/Cinzel-VariableFont_wght.ttf);
+}
+
+
+
+:root{
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --color1: #fc5e5e;
+    --color2: #080031;
+}
+
+*, *::after, *::before{
+	box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    background: var(--color2);
+    background: -webkit-linear-gradient(to left, var(--color1), var(--color2));
+    background: linear-gradient(to left, var(--color1), var(--color2));
+
+}
+
+div.section-one{
+    width: 40%;
+    background-image: url(../imgs/city-background.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+div.logo-container{
+    background-color: rgba(0, 0, 0, 0.74);
+    width: 100%;
+    margin-top: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 6px;
+    padding: 20px 10px;
+    font-family: 'Cinzel';
+    font-size: 1rem;
+}
+
+div.logo-container > img {
+    width: 125px;
+    height: 105px;
+}
+
+div.
