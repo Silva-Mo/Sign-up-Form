@@ -3,6 +3,10 @@
     src: url(../fonts/Cinzel-VariableFont_wght.ttf);
 }
 
+@font-face {
+    font-family: 'NovaFlat';
+    src: url(../fonts/NovaFlat-Regular.ttf);
+}
 
 
 :root{
@@ -21,11 +25,10 @@ body {
     background: var(--color2);
     background: -webkit-linear-gradient(to left, var(--color1), var(--color2));
     background: linear-gradient(to left, var(--color1), var(--color2));
-
 }
 
 div.section-one{
-    width: 40%;
+    width: 38%;
     background-image: url(../imgs/city-background.jpg);
     background-repeat: none;
     background-size: cover;
@@ -36,9 +39,9 @@ div.section-one{
 }
 
 div.logo-container{
-    background-color: rgba(0, 0, 0, 0.74);
+    background-color: rgba(0, 0, 0, 0.849);
     width: 100%;
-    margin-top: 30%;
+    margin-top: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,4 +57,85 @@ div.logo-container > img {
     height: 105px;
 }
 
-div.
+div.section-two{
+    width: 62%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+div.form-container{
+    width: 97%;
+    min-height: 97%;
+    background-color: rgba(0, 0, 0, 0.788);
+    box-shadow: 1px 1px 10px black;
+    border-radius: 5px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'NovaFlat';
+}
+
+div.form-container > h1{
+    width: fit-content;
+    color: white;
+    font-size: 2.4rem;
+    border-bottom: 3px solid white;
+    padding-bottom: 6px;
+}
+
+div.form-container > p {
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+strong{
+    font-size: 1.4rem;
+}
+
+form{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 35px;
+    column-gap: 60px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0px;
+    max-width: 600px;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+form > div > label{
+    display: block;
+    color: white;
+}
+
+input {
+    width: 250px;
+    height: 35px;
+    color: white;
+    appearance: none;
+    border: none;
+    border-bottom: 2px solid var(--color1);
+    border-radius: 3px;
+    background: none;
+    font-size: 1.2rem;
+}
+
+input::placeholder {
+    color: rgba(248, 248, 255, 0.212);
+}
+
+form > div > label span{
+    color: red;
+}
