@@ -8,7 +8,7 @@
     <link rel="icon" href="imgs/icon.png">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <div class="section-one">
@@ -23,10 +23,11 @@
             <h1>Welcome to our city</h1>
             <p>It seems like you are interested in our modern city, our city is open for everyone !<br> <br>
                <strong>Feel free to get started:</strong></p>
-            <form action="#" method="post">
+            <form action="#" method="post" novalidate>
                 <div>
                     <label for="first_name">FIRST NAME<span><strong>*</strong></span></label>
-                    <input type="text" id="first_name" name="user_first_name" placeholder="John" required>
+                    <input type="text" id="first_name" name="user_first_name" placeholder="John" maxlength="20" minlength="2" required>
+                    <span class="error"></span>
                 </div>
                 <div>
                     <label for="last_name">LAST NAME</label>
@@ -35,20 +36,36 @@
                 <div>
                     <label for="email">EMAIL<span><strong>*</strong></span></label>
                     <input type="email" id="email" name="user_email" placeholder="example@abc.com" required>
+                    <span class="error"></span>
                 </div>
                 <div>
-                    <label for="">PHONE NUMBER</label>
-                    <input type="text">
+                    <label for="phone_number">PHONE NUMBER<span><strong>*</strong></span></label>
+                    <input type="tel" id="phone_number" name="user_phone_number" pattern="^\([0-9]{3}\)[0-9]{3}-[0-9]{4}$"
+                    placeholder="(123)123-1234"
+                    maxlength="13"
+                    required>
+                    <span class="error"></span>
                 </div>
                 <div>
-                    <label for="">PASSWORD</label>
-                    <input type="text">
+                    <label for="password">PASSWORD<span><strong>*</strong></span></label>
+                    <input type="password" id="password" name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{0,}$" 
+                    minlength="8" 
+                    required>
+                    <span class="error"></span>
+                    <span class="specifications">
+                        <span class="check">• 8 characters</span>
+                        <span class="check">• one capital letter</span>
+                        <span class="check">• one small letter</span>
+                        <span class="check">• one special character</span>
+                        <span class="check">• one number</span>
+                    </span>
                 </div>
                 <div>
-                    <label for="">CONFIRM PASSWROD</label>
-                    <input type="text">
+                    <label for="passwrod_confirm">CONFIRM PASSWROD<span><strong>*</strong></span></label>
+                    <input type="password" id="passwrod_confirm" name="user_password_confirmation" required>
+                    <span class="error"></span>
                 </div>
-                <div>
+                <div class="button">
                     <button type="submit">Create Account</button>
                 </div>
             </form>
