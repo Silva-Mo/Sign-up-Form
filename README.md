@@ -1,7 +1,7 @@
 # Sign-up-Form
 ## Result
 ![project preview](imgs/preview.png)
-![LIVE DEMO](https://silva-mo.github.io/Sign-up-Form/)
+[LIVE DEMO](https://silva-mo.github.io/Sign-up-Form/)
 
 ## About the project
 - This is my sixth TOP project, It requires a good experience in intermediate HTML, CSS, and JS.
