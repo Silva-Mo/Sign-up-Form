@@ -12,6 +12,8 @@
  3. Beautiful
  4. Easy for different users
 
+ Alhamdulillah
+
 ## What was needed to complete it:
 - intermediate HTML, and CSS skills
 - Constraint Validation API JS skills
