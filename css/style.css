@@ -260,3 +260,52 @@ button:active{
     color: var(--color1);
     text-decoration: none;
 }
+
+@media only screen and (max-width: 850px){
+    :root{
+        font-size: 14px;
+    }
+
+    body{
+        flex-direction: column;
+        gap: 10px;
+        background: -webkit-linear-gradient(to top, var(--color1), var(--color2));
+        background: linear-gradient(to top, var(--color1), var(--color2));
+    }
+
+    div.section-one{
+        width: 100%;
+        background-image: url(../imgs/city-landscape.jpg);
+        align-items: center;
+        min-height: 25vh;
+    }
+
+    div.section-two{
+        width: 100%;
+        min-height: 70vh;
+    }
+
+    div.section-two > .form-container{
+        width: 90%;
+        min-height: max-content;
+        margin-bottom: 10px;
+    }
+
+    div.logo-container{
+        margin-top: 0;
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+
+    div.logo-container > img{
+        width: 80px;
+        height: 70px;
+    }
+
+    form{
+        align-self: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+}

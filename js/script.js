@@ -164,8 +164,6 @@ function showPasswordConfirmError () {
     } 
 }
 
-
-
 password.addEventListener('input', (e) => {
     if (password.value.length >= 8){
         passwordChecks[0].classList.add("met");
@@ -204,7 +202,6 @@ password.addEventListener('input', (e) => {
         passwordChecks[4].classList.remove("met");
     }
 })
-
 
 function confirmPassword() {
     if (password.value === passwordConfirm.value){
