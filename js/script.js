@@ -6,6 +6,7 @@ const password = document.querySelector('#password');
 const passwordConfirm = document.querySelector('#passwrod_confirm');
 const errorSpans = document.querySelectorAll('.error');
 const passwordChecks = document.querySelectorAll('.check');
+
 let inputs = [firstName, email, phoneNumber, password, passwordConfirm];
 
 form.addEventListener('submit', (e) => {
@@ -67,8 +68,10 @@ function showError() {
 function showNameError() {
     if (firstName.validity.valid){
         errorSpans[0].textContent = "";
+        firstName.removeAttribute('style');
     }
     else {
+        firstName.setAttribute('style', 'border-color: red;');
         if (firstName.validity.valueMissing){
             errorSpans[0].textContent = "You have to type your name";
         }
@@ -87,8 +90,10 @@ function showNameError() {
 function showEmailError(){
     if (email.validity.valid){
         errorSpans[1].textContent = "";
+        email.removeAttribute('style');
     }
     else {
+        email.setAttribute('style', 'border-color: red;');
         if (email.validity.valueMissing){
             errorSpans[1].textContent = "You have to type your email";
         }
@@ -104,8 +109,10 @@ function showEmailError(){
 function showPhoneNumberError() {
     if (phoneNumber.validity.valid){
         errorSpans[2].textContent = "";
+        phoneNumber.removeAttribute('style');
     }
     else {
+        phoneNumber.setAttribute('style', 'border-color: red;');
         if (phoneNumber.validity.valueMissing){
             errorSpans[2].textContent = "You have to type your phone number";
         }
@@ -121,8 +128,10 @@ function showPhoneNumberError() {
 function showPasswordError() {
     if (password.validity.valid){
         errorSpans[3].textContent = "";
+        password.removeAttribute('style');
     }
     else {
+        password.setAttribute('style', 'border-color: red;');
         if (password.validity.valueMissing){
             errorSpans[3].textContent = "You have to type your new password";
         }
@@ -142,8 +151,10 @@ function showPasswordError() {
 function showPasswordConfirmError () {
     if (passwordConfirm.validity.valid && confirmPassword()){
         errorSpans[4].textContent = "";
+        passwordConfirm.removeAttribute('style');
     }
     else {
+        passwordConfirm.setAttribute('style', 'border-color: red;');
         if (passwordConfirm.validity.valueMissing){
             errorSpans[4].textContent = "You have to confirm your password by typing it again"
         }
