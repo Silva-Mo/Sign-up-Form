@@ -295,6 +295,7 @@ button:active{
         margin-top: 0;
         padding: 10px;
         font-size: 0.8rem;
+        gap: 30px;
     }
 
     div.logo-container > img{
@@ -307,5 +308,23 @@ button:active{
         justify-content: center;
         flex-wrap: nowrap;
         flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 1325px){
+    :root{
+        font-size: 20px;
+    }
+    
+    form{
+        max-width: 800px;
+    }
+
+    form > div{
+        min-width: 350px;
+    }
+
+    .form-container{
+        gap: 30px;
     }
 }
