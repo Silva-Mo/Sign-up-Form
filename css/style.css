@@ -50,7 +50,6 @@ div.section-one {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    max-height: 100vh;
 }
 
 div.logo-container {
