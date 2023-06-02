@@ -50,6 +50,7 @@ div.section-one {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    max-height: 100vh;
 }
 
 div.logo-container {
@@ -157,8 +158,8 @@ form>div>label span {
 }
 
 input:focus {
-    outline: 2px solid var(--color1);
-    border-bottom: none;
+    outline: none;
+    box-shadow: 0 -1px 3px var(--color1);
 }
 
 .error {
