@@ -182,6 +182,7 @@ input:focus {
 
 .check {
     display: none;
+    font-size: 0.8rem;
 }
 
 input#password:focus~.specifications>.check {
