@@ -95,20 +95,20 @@ div.form-container {
 div.form-container>h1 {
     width: fit-content;
     color: white;
-    font-size: 2.4rem;
+    font-size: 2.1rem;
     border-bottom: 3px solid white;
     padding-bottom: 6px;
 }
 
 div.form-container>p {
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 5px;
     margin-bottom: 0px;
 }
 
 strong {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
 }
 
 form {
@@ -327,6 +327,6 @@ button:active{
     }
 
     .form-container{
-        gap: 30px;
+        gap: 10px;
     }
 }
